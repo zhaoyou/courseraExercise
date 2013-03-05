@@ -2,6 +2,9 @@
 import java.util.List;
 import java.util.ArrayList;
 
+/**
+ *  zhaoyou.xt@gmail.com (zhaoyou)
+ */
 public class UF {
 
   int[] N ;
@@ -61,6 +64,8 @@ public class UF {
   }
 
   public static void main(String[] args) {
+
+    long start = System.currentTimeMillis();
     int n = StdIn.readInt();
     UF uf = new UF(n);
     while(!StdIn.isEmpty()) {
@@ -71,5 +76,7 @@ public class UF {
         System.out.println(p + ":" + q);
       }
     }
+    long end = System.currentTimeMillis();
+    StdOut.println("cost time:" + (end -  start));
   }
 }
